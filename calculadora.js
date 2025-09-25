@@ -10,8 +10,16 @@ let num9 = "";
 let num0 = "";
 let op = "";
 
+function asignarValor(valor){
+if(!op){
+    valor1=valor;
+  }  else{
+       valor2=valor
+    }
+}
 
-function calcular(num1,num2,op){
+
+function calcular(num1,numb2,op){
     switch(op){
         case "+":
         return num1+num2;
@@ -53,6 +61,7 @@ const btnOpIgual=document.querySelector("#igual");
 
 //se puede hacer una funcion que muestre el display
 btnNum1.addEventListener("click",function() {
+    asignarValor(Number (e.target.))
     document.getElementById("display").innerText="1";
     num1=1;
 }  );
@@ -124,5 +133,3 @@ btnOpRes.addEventListener("click",function() {
 
 
 
-
-console.log(btnNum1);
